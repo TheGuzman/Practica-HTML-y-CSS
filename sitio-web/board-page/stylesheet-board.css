@@ -110,8 +110,16 @@ height: min-content;
     font-size: 0.7rem;
     font-family:'Oswald-Light', sans-serif;
 }
+.chess-board{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
 
-
+.chess-board__cell{
+    width: 4em;
+    height: 4em;
+}
 /* Mediaqueries breakpoints */
 
 @media (min-width: 481px) {}
