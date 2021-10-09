@@ -11,25 +11,108 @@
 
 <body class="page__container">
     <header class="header__container">
-        <img class="main-logo" src="../home-page/assets/img/logo.svg" alt="Html & CSS logo"></img>
-        <ul class="menu-bar__list">
-            <li><a class="menu-bar--item" href="#">HOME</a></li>
-            <li><a class="menu-bar--item" href="#">BOARD</a></li>
-            <li><a class="menu-bar--item" href="#">CONTACTO</a></li>
-        </ul>
-        <div class="logos__container">
-            <img class="logo logo--facebook" src="../home-page/assets/img/fb-logo.png" alt="Facebook logo">
-            <img class="logo logo--twitter" src="../home-page/assets/img/twit-logo.png" alt="Twitter logo">
-            <img class="logo logo--youtube" src="../home-page/assets/img/yt-logo.png" alt="Youtube logo">
-            <img class="logo logo--instagram" src="../home-page/assets/img/inst-logo.png" alt="Instagram logo">
+        <div class="header__logo__container">
+            <img class="main-logo" src="../home-page/assets/img/logo.svg" alt="Html & CSS logo"></img>
+            <label class="toggle__input" for="toggle__input">&#9776;</label>
+            <input type="checkbox" class="checkbox__button" id="toggle__input">
         </div>
+        <nav class="nav__container">
+            <ul class="menu-bar__list">
+                <li><a class="menu-bar__item" href="#">HOME</a></li>
+                <li><a class="menu-bar__item" href="#">BOARD</a></li>
+                <li><a class="menu-bar__item" href="#">CONTACTO</a></li>
+            </ul>
+            <div class="logos__container--social-media">
+                <img class="social-media__logo logo__facebook" src="../home-page/assets/img/fb-logo.png" alt="Facebook logo">
+                <img class="social-media__logo logo__twitter" src="../home-page/assets/img/twit-logo.png" alt="Twitter logo">
+                <img class="social-media__logo logo__youtube" src="../home-page/assets/img/yt-logo.png" alt="Youtube logo">
+                <img class="social-media__logo logo__instagram" src="../home-page/assets/img/inst-logo.png" alt="Instagram logo">
+            </div>
+        </nav>
     </header>
     <main class="main__container">
-        <h1>Aqui va el main</h1>
+        <div class="chess-board__container">
+            <label>¿Quieres jugar con fichas negras? <input type="checkbox" class="chess-board__color--picker"></label>
+            <div class="chess-board__frame">
+                <div class="chess-board">
+                    <div class="chess-board__cell white--cell">♜</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♖</div>
+                    <!-- row2 -->
+                    <div class="chess-board__cell white--cell">♞</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♘</div>
+                    <!-- row3 -->
+                    <div class="chess-board__cell white--cell">♗</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♗</div>
+                    <!-- row4 -->
+                    <div class="chess-board__cell white--cell">♚</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♔</div>
+                    <!-- row5 -->
+                    <div class="chess-board__cell white--cell">♛</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♕</div>
+                    <!-- row6 -->
+                    <div class="chess-board__cell white--cell">♝</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♗</div>
+                    <!-- row7 -->
+                    <div class="chess-board__cell white--cell">♞</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♘</div>
+                    <!-- row8 -->
+                    <div class="chess-board__cell white--cell">♜</div>
+                    <div class="chess-board__cell black--cell">♟</div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell"></div>
+                    <div class="chess-board__cell black--cell"></div>
+                    <div class="chess-board__cell white--cell">♙</div>
+                    <div class="chess-board__cell black--cell">♖</div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer__container">
-        <p class="footer--text">Copyright© mi equipo 2021</p>
+        <p class="footer__text">Copyright© mi equipo 2021</p>
     </footer>
 </body>
 
