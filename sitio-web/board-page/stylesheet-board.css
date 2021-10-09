@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family:'Oswald';
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-Bold.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-ExtraLight.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-Light.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-Medium.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-Regular.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-SemiBold.ttf);
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+html{
+    font-family:'Oswald';
+}
 .page__container {
     height: 100vh;
     width: 100%;
@@ -14,21 +27,37 @@
 }
 
 .header__container {
-    height: 20%;
+    height: 10%;
     width: 100%;
+    margin-top: 0.5em;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.toggle__input{
+font-size: 2rem;
+margin: 0em 1em 0em 0em;
+height: min-content;
+}
+.checkbox__button{
+    display: none;
+}
+
+.header__logo__container{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
 }
 
-.main__container {
-    height: 70%;
-    width: 100%;
-}
-
 .main-logo {
-    height: 50%;
+    height: 7em;
+    margin-left: 1em;
+}
+.nav__container{
+    width: 100%;
+    display: none;
 }
 
 .menu-bar__list {
@@ -41,19 +70,30 @@
 }
 
 .menu-bar__list li a {
-    padding: 0em 1em;
+    padding: 2em 1em;
+    text-decoration: none;
+    color:#1b1c20;
+    font-size: 1rem;
+
 }
 
-.logos__container {
+.logos__container--social-media {
     display: flex;
     justify-content: flex-start;
+    margin-right: 1em;
 }
 
-.logo {
+.social-media__logo {
     width: 2em;
     height: 2em;
+    margin:0 0.2em 0 0.2em;
+    transition: transform .25s ease-in;
 }
 
+.main__container {
+    height: 80%;
+    width: 100%;
+}
 .footer__container {
     width: 100%;
     height: 10%;
@@ -67,6 +107,8 @@
 
 .footer__text {
     color: white;
+    font-size: 0.7rem;
+    font-family:'Oswald-Light', sans-serif;
 }
 
 
@@ -74,6 +116,52 @@
 
 @media (min-width: 481px) {}
 
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+    .header__container{
+        height: min-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5em;
+    }
+    .header__logo__container{
+        width: 15%;
+    }
+
+    .nav__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 57%;
+    }
+    .menu-bar__list{
+        flex-direction: row;
+    }
+    .menu-bar__list li a {
+        padding: 2em 1em;
+        text-decoration: none;
+        color: #1b1c20;
+        font-size: 1rem;
+    }
+    .menu-bar__item:hover{
+        padding: 2em 1em;
+        text-decoration: underline;
+        color: #ffffff;
+        font-size: 1rem;
+        background-color: #1b1c20;
+        transition: background-color .3s;
+    }
+    .logos__container--social-media{
+        align-self: flex-end;
+    }
+
+    .toggle__input{
+        display: none;
+    }
+
+    .social-media__logo:hover{
+    transform: scale(1.25);
+    }
+}
 
 @media (min-width: 1440px) {}
