@@ -6,10 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./stylesheet.css" rel="stylesheet">
-    <title>prueba</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Home</title>
 </head>
 
-<body>
+<body class="page__container">
+    <!-- HEADER -->
+    <header class="header__container">
+        <div class="header__logo__container">
+            <img class="main-logo" src="./assets/img/logo.svg" alt="Html & CSS logo"></img>
+            <label class="toggle__input" for="toggle__input">&#9776;</label>
+            <input type="checkbox" class="checkbox__button" id="toggle__input">
+        </div>
+        <nav class="nav__container">
+            <ul class="menu-bar__list">
+                <li><a class="menu-bar__item" href="#">HOME</a></li>
+                <li><a class="menu-bar__item" href="#">BOARD</a></li>
+                <li><a class="menu-bar__item" href="#">CONTACTO</a></li>
+            </ul>
+            <div class="logos__container--social-media">
+                <img class="social-media__logo logo__facebook" src="./assets/img/fb-logo.png" alt="Facebook logo">
+                <img class="social-media__logo logo__twitter" src="./assets/img/twit-logo.png" alt="Twitter logo">
+                <img class="social-media__logo logo__youtube" src="./assets/img/yt-logo.png" alt="Youtube logo">
+                <img class="social-media__logo logo__instagram" src="./assets/img/inst-logo.png" alt="Instagram logo">
+            </div>
+        </nav>
+    </header>
     <!-- MAIN BANNER -->
     <div class="banner__container">
         <video class="banner__video" autoplay muted loop playsinline id="main__banner--video">
@@ -20,7 +42,7 @@
             <h1 class="title-video">Vamos a crear una web responsive y animada.</h1>
         </div>
     </div>
-    <!-- CARDS -->
+    <!-- FLIP-CARDS -->
     <section class="cards__container">
         <h1 class="cards__container--title">Lugares del mundo</h1>
         <div class="card">
@@ -36,9 +58,104 @@
             </div>
         </div>
     </section>
+    <!-- PRICING-CARDS-SECTION -->
+    <article class="pricing__section--container">
+        <div class="pricing__header">
+            <h1 class="pricing__header pricing__title">Find a plan that's right for you</h1>
+            <p class="pricing__header pricing__description">Every plan comes with a 30-day free trial</p>
+        </div>
+        <div class="pricing__card--container">
+            <!-- BRONZE CARD -->
+            <div class="pricing__card ">
+                <h3 class="pricing__card--title">Bronze Package</h3>
+                <div class="price__box">
+                    <p class="price__box dolar">$</p>
+                    <p class="price__box price">10</p>
+                    <p class="price__box month">Month</p>
+                </div>
+                <div class="feature__box">
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Unlimited Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Edit Your Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Approve Reviews</p>
+                    </div>
+                </div>
+                <button class="pricing__button--green">Get Started Now</button>
+            </div>
+            <!-- GOLD CARD -->
+            <div class="pricing__card">
+                <div class="circle__container">
+                    <p class="cicle__text">MOST POPULAR</p>
+                </div>
+                <h3 class="pricing__card--title">Gold Package</h3>
+                <div class="price__box">
+                    <p class="price__box dolar">$</p>
+                    <p class="price__box price">19</p>
+                    <p class="price__box month">Month</p>
+                </div>
+                <div class="feature__box">
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Unlimited Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Edit Your Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Approve Reviews</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Take Booking Online</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">24/7 Support Service</p>
+                    </div>
+                </div>
+                <button class="pricing__button--green">Get Started Now</button>
+            </div>
+            <!-- PLATINIUM CARD -->
+            <div class="pricing__card ">
+                <h3 class="pricing__card--title">Platinum Package</h3>
+                <div class="price__box">
+                    <p class="price__box dolar">$</p>
+                    <p class="price__box price">49</p>
+                    <p class="price__box month">Month</p>
+                </div>
+                <div class="feature__box">
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Unlimited Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Edit Your Listing</p>
+                    </div>
+                    <div class="feature__line">
+                        <span class="material-icons"> check_circle</span>
+                        <p class="feature__box--description">Approve Reviews</p>
+                    </div>
+                </div>
+                <button class="pricing__button--green">Get Started Now</button>
+            </div>
 
+        </div>
+    </article>
 
-
+    <!-- FOOTER -->
+    <footer class="footer__container">
+        <p class="footer__text">Copyright© mi equipo 2021</p>
+    </footer>
 </body>
 
 </html>
