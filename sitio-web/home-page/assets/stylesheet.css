@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Oswald-regular';
+  src: url(./assets/fonts/Oswald-regular.ttf);
+}
+@font-face {
+  font-family: 'Oswald-bold';
+  src: url(./assets/fonts/Oswald-bold.ttf);
+}
+@font-face {
+  font-family: 'oswald-light';
+  src: url(./assets/fonts/Oswald-Light.ttf);
+}
+ /* BANNER PRINCIPAL */
+.banner__video{
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.banner__container{
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.banner__text-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.subtitle-video{
+  font-family: 'Oswald-regular',sans-serif;
+  font-size: 0.8rem;
+}
+.title-video{
+  font-family: 'Oswald-bold',sans-serif;
+  line-height: 90%;
+  font-size: 2rem;
+}
+
+/* CARDS */
+.cards__container{
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family:'Oswald-bold',sans-serif;
+  gap: 1rem;
+}
+.card:hover .card__inner {
+perspective: 1000px;
+transform: rotateY(180deg);
+
+}
+.card.card__inner{
+position: relative;
+width: 400px;
+height: 200px;
+max-width: 25rem;
+}
+.card__inner {
+transition: 0.8s ease-in-out;
+transform-origin: 50% 50%;
+transform-style: preserve-3d;
+}
+.card__front.card__back {
+position: absolute;
+top: 0;
+left: 0;  
+width: 100%;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+}
+.card__front{
+background-image: url('./assets/img/mountain.jpeg');
+background-size: cover;
+color: #ffffff;
+}
+.card__back{
+background-color: #313131;
+color: #ffffff;
+}
+.card__front--title{
+font-size: 3rem;
+padding: 4rem;
+}
+.card__back--title{
+  font-size: 3rem;
+}
+.card__back--description{
+  font-size: 1rem;
+  font-family: 'oswald-light',sans-serif;
+}
+
+/* PRICING */
