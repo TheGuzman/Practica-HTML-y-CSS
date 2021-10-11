@@ -117,11 +117,18 @@ height: min-content;
     align-self: flex-start;
 }
 
+.chess-board__container{
+    display: flex;
+    justify-content: center;
+}
+
 .chess-board {
+    box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
     width: 41vw;
     height: 41vw;
+    margin: 1em 0 1em 0;
     border: 1em solid #1b1c20;
   }
   
@@ -137,26 +144,26 @@ height: min-content;
   }
   
 
-.chess-board__color--picker__input:checked + .chess-board{
+.chess-board__color--picker__input:checked + div .chess-board{
     -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
     -webkit-transition: transform 1s ease-out;
     transition: transform 1s ease-out;
 }
-.chess-board__color--picker__input:checked ~ .chess-board .chess-board__cell{
+.chess-board__color--picker__input:checked ~ div .chess-board .chess-board__cell{
     -webkit-transform: rotateX(360deg);
     transform: rotateX(360deg);
     -webkit-transition: transform 1s ease-out;
     transition: transform 1s ease-out;
 }
 
-.chess-board__color--picker__input:not(:checked) + .chess-board{
+.chess-board__color--picker__input:not(:checked) + div .chess-board{
     -webkit-transition: transform 1s ease-out;
     transition: transform 1s ease-out;
     -webkit-transform: transform rotateZ(180deg);
     transform: rotateZ(180deg);
 }
-.chess-board__color--picker__input:not(:checked) ~ .chess-board .chess-board__cell{
+.chess-board__color--picker__input:not(:checked) ~ div .chess-board .chess-board__cell{
     -webkit-transition: transform 1s ease-out;
     transition: transform 1s ease-out;
     -webkit-transform: transform rotateZ(180deg);
