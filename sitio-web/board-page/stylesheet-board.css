@@ -20,8 +20,7 @@ body {
 .page__container {
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    display: flex;
+     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -30,11 +29,12 @@ body {
     width: 100%;
     background-color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .toggle__input{
     font-size: 2rem;
-    margin: 0em 1em 0em 0em;
+    margin: 0em 0.5em 0em 0em;
     height: min-content;
 }
 .checkbox__button{
@@ -47,32 +47,22 @@ body {
 }
 .nav__container{
     width: 100%;
-    display: none;
-    height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    transition: transform .8s ease-out; 
+    transform: translateY(-270px);
+    z-index: 100;
+    background-color: #ffffff;
 }
 
-
 .checkbox__button:checked ~ .nav__container{
-    display: block;
-    animation-name:slide-right;
-    animation: slide-right .4s ease-out;
+    height: fit-content;
+    transform-origin: top center;
+    transform: translateY(13vh);
     position:absolute;
     background-color: #ffffff;
     z-index: 100;
-    top: 12vh;
 }
-
-@keyframes slide-right {
-    0% {
-      opacity: 0;
-      transform: translateX(-15%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
 .menu-bar__list {
     display: flex;
     flex-direction: column;
@@ -90,6 +80,7 @@ body {
     font-size: 1rem;
 
 }
+
 
 .logos__container--social-media {
     display: flex;
@@ -142,7 +133,7 @@ body {
     flex-wrap: wrap;
     width: 70vw;
     height: 70vw;
-    margin: 1em 0 1em 0;
+    margin: 0em 0 1em 0;
     border: 1em solid #1b1c20;
   }
   
@@ -202,19 +193,35 @@ body {
 
 @media (min-width: 1025px) {
     .header__container{
+        display: flex;
+        flex-wrap: nowrap;
         height: min-content;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     .nav__container{
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+        align-items: center;
+        position: revert;
+        overflow: revert;
+        transition: none;
+        transform: none;
+        width: 100%;
+        z-index: auto;
+    }
+    .logos__container--aligner {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
     }
     .menu-bar__list{
         flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
     .menu-bar__list li a {
         padding: 2em 1em;
@@ -232,7 +239,7 @@ body {
     }
     .logos__container--social-media{
         align-items: center;
-        margin:0;
+        width: 100%;
     }
 
     .toggle__input{
