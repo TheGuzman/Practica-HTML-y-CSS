@@ -5,15 +5,15 @@
 }
 @font-face {
   font-family: 'Oswald-regular';
-  src: url(./assets/fonts/Oswald-regular.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-Regular.ttf);
 }
 @font-face {
   font-family: 'Oswald-bold';
-  src: url(./assets/fonts/Oswald-bold.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-bold.ttf);
 }
 @font-face {
   font-family: 'oswald-light';
-  src: url(./assets/fonts/Oswald-Light.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-Light.ttf);
 }
 
 html{
@@ -34,6 +34,7 @@ html{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-family: 'Oswald-Regular';
 }
 .toggle__input{
   font-size: 2rem;
@@ -434,7 +435,73 @@ font-family: 'Oswald-regular';
 /* MEDIAQUERY-DESKTOP */
 @media (min-width: 1025px) {
   /* HEADER */
-  
+  .header__container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: min-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: revert;
+    overflow: revert;
+    transition: none;
+    transform: none;
+    width: 100%;
+    z-index: auto;
+}
+.logos__container--aligner {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.menu-bar__list{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.menu-bar__list li a {
+    padding: 2em 1em;
+    text-decoration: none;
+    color: #1b1c20;
+    font-size: 1rem;
+}
+.menu-bar__item:hover{
+    padding: 2em 1em;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #1b1c20;
+    transition: background-color .3s;
+}
+.logos__container--social-media{
+    align-items: center;
+    width: 100%;
+}
+
+.toggle__input{
+    display: none;
+}
+
+
+.social-media__logo:hover{
+transform: scale(1.25);
+}
+
+.chess-board{
+width: 50vw;
+height: 50vw;
+}
+.chess-board__cell {
+font-size: 5vw;
+  }
+
 /* PRICING-CARDS */
 .pricing__section--container{
   background-color: #F0F4F7;
