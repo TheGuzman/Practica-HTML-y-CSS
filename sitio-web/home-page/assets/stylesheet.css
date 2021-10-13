@@ -5,17 +5,17 @@
 }
 @font-face {
   font-family: 'Oswald-regular';
-  src: url(/sitio-web/home-page/assets/fonts/Oswald-Regular.ttf);
+  src: url(./fonts/Oswald-Regular.ttf);
 }
 @font-face {
   font-family: 'Oswald-bold';
-  src: url(/sitio-web/home-page/assets/fonts/Oswald-bold.ttf);
+  src: url(./fonts/Oswald-Bold.ttf);
 }
 @font-face {
   font-family: 'oswald-light';
-  src: url(/sitio-web/home-page/assets/fonts/Oswald-Light.ttf);
+  src: url(./fonts/Oswald-Light.ttf);
 }
-@font-face {
+/* @font-face {
   font-family:'Oswald';
   src: url(../home-page/assets/fonts/Oswald-Bold.ttf);
   src: url(../home-page/assets/fonts/Oswald-ExtraLight.ttf);
@@ -24,9 +24,9 @@
   src: url(../home-page/assets/fonts/Oswald-Regular.ttf);
   src: url(../home-page/assets/fonts/Oswald-SemiBold.ttf);
   src: url(../home-page/assets/fonts/Oswald-VariableFont_wght.ttf);
-}
+} */
 body {
-  font-family: 'Oswald';
+  font-family: 'Oswald-bold';
 }
 .page__container {
   min-height: 100vh;
