@@ -18,9 +18,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+/* HEADER CONTAINER */
 .header__container {
     width: 100%;
+    height: fit-content;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +55,9 @@ body {
     transform: translateY(-270px);
     z-index: 100;
     background-color: #ffffff;
+}
+.nav__container--desktop{
+    display: none;
 }
 
 .checkbox__button:checked ~ .nav__container{
@@ -90,7 +94,6 @@ body {
 
 }
 
-
 .logos__container--social-media {
     display: flex;
     justify-content: flex-start;
@@ -103,27 +106,9 @@ body {
     margin:0 0.2em 0 0.2em;
     transition: transform .25s ease-in;
 }
-
+/* MAIN CONTAINER */
 .main__container {
     width: 100%;
-}
-
-
-.footer__text {
-    color: white;
-    font-size: 0.7rem;
-    font-family:'Oswald-Light', sans-serif;
-}
-
-
-.footer__container {
-    width: 100%;
-    height: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-    background-color: #1b1c20;
 }
 
 .chess-board__color--picker__label {
@@ -142,8 +127,8 @@ body {
     flex-wrap: wrap;
     width: 70vw;
     height: 70vw;
-    margin: 0em 0 1em 0;
-    border: 1em solid #1b1c20;
+    margin: 1em 0 1em 0;
+    border: 1.5em solid #1b1c20;
   }
   
   .chess-board__cell {
@@ -191,6 +176,22 @@ body {
 .black--cell{
     background-color:#999999;
 }
+/* FOOTER */
+.footer__container {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: #1b1c20;
+}
+.footer__text {
+    color: white;
+    font-size: 0.7rem;
+    font-family:'Oswald-Light', sans-serif;
+}
+
 /* Mediaqueries breakpoints */
 
 @media (min-width: 481px) {
@@ -209,7 +210,10 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-    .nav__container{
+    .nav.main__container{
+        display: none;
+    }
+    .nav__container--desktop{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -226,6 +230,12 @@ body {
         display: flex;
         justify-content: center;
         margin: 1em;
+    }
+    .checkbox__button:checked ~ .nav__container{
+        display:none;
+    }
+    .checkbox__button:checked ~ .toggle__input--close{
+        display:none;
     }
     .menu-bar__list{
         flex-direction: row;
@@ -263,6 +273,8 @@ body {
     .chess-board{
     width: 50vw;
     height: 50vw;
+    margin:0 0 1em 0;
+    border: 2em solid #1b1c20;
     }
     .chess-board__cell {
     font-size: 5vw;
@@ -272,8 +284,8 @@ body {
 @media (min-width: 1440px) {
 
 .chess-board{
-    width: 40vw;
-    height: 40vw;
+    width: 38vw;
+    height: 38vw;
     }
 .chess-board__cell {
     font-size: 4vw;
