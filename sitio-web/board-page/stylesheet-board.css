@@ -5,17 +5,11 @@
 }
 
 @font-face {
-    font-family:'Oswald';
-    src: url(../home-page/assets/fonts/Oswald-Bold.ttf);
-    src: url(../home-page/assets/fonts/Oswald-ExtraLight.ttf);
-    src: url(../home-page/assets/fonts/Oswald-Light.ttf);
-    src: url(../home-page/assets/fonts/Oswald-Medium.ttf);
-    src: url(../home-page/assets/fonts/Oswald-Regular.ttf);
-    src: url(../home-page/assets/fonts/Oswald-SemiBold.ttf);
-    src: url(../home-page/assets/fonts/Oswald-VariableFont_wght.ttf);
+    font-family:'Oswald-regular';
+    src: url(/sitio-web/home-page/assets/fonts/Oswald-Regular.ttf);
 }
 body {
-    font-family: 'Oswald';
+    font-family: 'Oswald-regular';
   }
 .page__container {
     min-height: 100vh;

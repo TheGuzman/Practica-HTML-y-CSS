@@ -5,15 +5,15 @@
 }
 @font-face {
   font-family: 'Oswald-regular';
-  src: url(./assets/fonts/Oswald-regular.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-Regular.ttf);
 }
 @font-face {
   font-family: 'Oswald-bold';
-  src: url(./assets/fonts/Oswald-bold.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-bold.ttf);
 }
 @font-face {
   font-family: 'oswald-light';
-  src: url(./assets/fonts/Oswald-Light.ttf);
+  src: url(/sitio-web/home-page/assets/fonts/Oswald-Light.ttf);
 }
 @font-face {
   font-family:'Oswald';
@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-family: 'Oswald-Regular';
 }
 .toggle__input{
   font-size: 2rem;
