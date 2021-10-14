@@ -44,9 +44,9 @@ h2{
 .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
     padding: 1em;
     border-radius: 5px;
-    width: 50%;
+    width: 75%;
     height: 3em;
-    border: 0;
+    border: none;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -59,6 +59,10 @@ h2{
 .seleccionar{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.color__change{
+    filter: grayscale(1);
 }
 
 .recomendaciones{
@@ -76,8 +80,9 @@ h2{
 
 .input-coment{
     border-radius: 5px;
-    width: 600px;
+    width: 75%;
     height: 100px;
+    padding: 1em;
     border: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -85,7 +90,7 @@ h2{
 
 .send{
     color: #1b1c20; 
-    width: 600px;
+    width: 75%;
     height: 25px;
     border-radius: 5px;
     border: 0;
@@ -93,14 +98,31 @@ h2{
 }
 
 
-/* Mediaqueries breakpoints */
 
-@media (min-width: 481px) {
-    .contenedor-padre{
-
+@media (min-width: 481px){
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 75%;
     }
 }
 
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 60%;
+    }
+    .input-coment{
+        width: 60%;
+    }
+    
+    .send{
+        width: 60%;
+    }
+}
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 50%;
+    }
+}
