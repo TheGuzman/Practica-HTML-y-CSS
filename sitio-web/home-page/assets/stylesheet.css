@@ -473,13 +473,13 @@ font-family: 'Oswald-regular';
 /* FOOTER */
 .footer__container {
   width: 100%;
+  height: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
   background-color: #1b1c20;
-  min-height: 2rem;
 }
-
 .footer__text {
   color: white;
   font-size: 0.7rem;
