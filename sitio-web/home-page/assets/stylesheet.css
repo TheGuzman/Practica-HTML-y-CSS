@@ -639,6 +639,17 @@ font-size: 5vw;
   border-bottom: 0.1rem solid #6e768d;
   width: 80%;
 }
+.pricing__card:hover .circle__container{
+  transform: rotate(360deg);
+  transition: 0.5s ease;
+ }
+.circle__container {
+    position: absolute;
+    top: -1rem;
+    left: 80%;
+    width: 3.3rem;
+    height: 3.3rem;
+}
   /* feature-section */
   .feature__box{
     display: flex;
