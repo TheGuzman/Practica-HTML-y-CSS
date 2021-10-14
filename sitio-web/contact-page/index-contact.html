@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheet-contact.css">
 </head>
 <body>
+    <form action="http://google.com" method="get">
     <div class="contenedor-padre">
         <h1 class="titulo1">Formulario de contacto</h1>
         <h2 class="titulo2">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</h2>
@@ -17,11 +18,11 @@
         </div>
         <p>Email</p>
         <div>
-            <input class="input-email" type="email" id="email" placeholder="Introduce tu Email" required>
+            <input class="input-email" type="email" id="email" name="correo" placeholder="Introduce tu Email" required>
         </div>
         <p>Edad</p>
         <div>
-            <input class="input-edad" type="number" min="18" placeholder="Introduce tu edad, debes ser mayor de edad" required>
+            <input class="input-edad" type="number" min="18" name="años" placeholder="Introduce tu edad, debes ser mayor de edad" required>
         </div>
         <p>¿Qué rol describe mejor tu situación actual?</p>
             <div>
@@ -75,7 +76,7 @@
         </div>
         <p>¿Cuándo preferirías que te contactásemos?</p>
             <div>
-                <input class="input-fecha" type="datetime-local" min="2022-01-01" required>
+                <input class="input-fecha" type="datetime-local" name="fecha" min="2022-01-01" required>
             </div>
     
         <p>¿Otros comentarios o sugerencias?</p>   
@@ -86,8 +87,8 @@
         <div>
             <input class="send" type="submit" name="enviar">
         </div>
-    </div>    
-        
+    </div>   
+    </form>     
 </body>
     
 <footer>
